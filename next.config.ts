@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  serverExternalPackages: ['@vercel/kv'],
   // Allow fetching from Google Status API
   async headers() {
     return [
